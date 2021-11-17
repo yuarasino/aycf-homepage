@@ -13,7 +13,7 @@ const SiteHeader: FC = () => {
   return (
     <header
       className="
-        fixed top-0 left-0 w-full h-16
+        fixed top-0 left-0 w-full h-16 z-50
         bg-gray-900 text-white
       "
     >

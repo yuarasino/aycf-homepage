@@ -2,6 +2,8 @@ import type { NextPage } from "next"
 
 import Head from "next/head"
 
+import TopSection from "../components/top-section"
+
 const HomePage: NextPage = () => {
   return (
     <div id="home">
@@ -9,7 +11,7 @@ const HomePage: NextPage = () => {
         <title>えーゆーちごふれ！</title>
         <meta name="description" content="えーゆーちごふれのホームページ" />
       </Head>
-      <p>Home</p>
+      <TopSection />
     </div>
   )
 }
