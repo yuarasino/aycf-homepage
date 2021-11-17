@@ -1,8 +1,21 @@
-import "../styles/globals.css"
 import type { AppProps } from "next/app"
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import App from "next/app"
+
+import SiteHeader from "../components/site-header"
+import SiteFooter from "../components/site-footer"
+
+class MyApp extends App {
+  render(): JSX.Element {
+    const { Component, pageProps }: AppProps = this.props
+    return (
+      <>
+        <SiteHeader />
+        <Component {...pageProps} />
+        <SiteFooter />
+      </>
+    )
+  }
 }
 
 export default MyApp
