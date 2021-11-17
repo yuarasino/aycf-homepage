@@ -1,0 +1,34 @@
+[
+  {
+    "name": "TOP",
+    "link": "/#top"
+  },
+  {
+    "name": "NEWS",
+    "link": "/#news"
+  },
+  {
+    "name": "MEMBER",
+    "link": "/#member"
+  },
+  {
+    "name": "LIVE",
+    "link": "/#LIVE"
+  },
+  {
+    "name": "BLOG",
+    "link": "/blog/"
+  },
+  {
+    "name": "MAHJONG",
+    "link": "/bolg/mahjong/"
+  },
+  {
+    "name": "FANART",
+    "link": "/fanart/"
+  },
+  {
+    "name": "THANKS",
+    "link": "/thanks/"
+  }
+]

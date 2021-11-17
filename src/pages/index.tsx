@@ -4,13 +4,13 @@ import Head from "next/head"
 
 const HomePage: NextPage = () => {
   return (
-    <main id="home">
+    <div id="home">
       <Head>
         <title>えーゆーちごふれ！</title>
         <meta name="description" content="えーゆーちごふれのホームページ" />
       </Head>
       <p>Home</p>
-    </main>
+    </div>
   )
 }
 
