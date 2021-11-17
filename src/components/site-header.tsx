@@ -13,22 +13,19 @@ const SiteHeader: FC = () => {
   return (
     <header
       className="
-        fixed top-0 left-0
-        w-full h-16
+        fixed top-0 left-0 w-full h-16
         bg-gray-900 text-white
       "
     >
       <div
         className="
-          relative
-          w-full h-full
+          relative w-full h-full
           flex justify-center items-center lg:hidden
         "
       >
         <div
           className={`
-            absolute top-16 left-0
-            w-full h-screen
+            absolute top-16 left-0 w-full h-screen
             flex flex-col justify-start items-center
             bg-gray-900
             transform ${open ? "translate-x-0" : "-translate-x-full"}
@@ -103,8 +100,7 @@ type OpenButtonProps = {
 const OpenButton: FC<OpenButtonProps> = ({ open, onClick }) => {
   const getIconClassName = (visible: boolean): string => {
     return `
-      absolute top-0 left-0
-      w-full h-full
+      absolute top-0 left-0 w-full h-full
       ${visible ? "opacity-100" : "opacity-0"}
       transition-opacity duration-500
     `
@@ -112,8 +108,7 @@ const OpenButton: FC<OpenButtonProps> = ({ open, onClick }) => {
   return (
     <button
       className="
-        absolute top-4 right-4
-        w-8 h-8
+        absolute top-4 right-4 w-8 h-8
         block
       "
       onClick={onClick}
