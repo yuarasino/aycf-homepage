@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app"
 
 import App from "next/app"
+import "tailwindcss/tailwind.css"
 
 import SiteHeader from "../components/site-header"
 import SiteFooter from "../components/site-footer"
