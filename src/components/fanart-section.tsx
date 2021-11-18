@@ -1,10 +1,16 @@
-import type { FC } from "react"
+import type { FC, MouseEventHandler } from "react"
 
+import { useState } from "react"
 import Image from "next/image"
+import Lightbox from "react-image-lightbox"
+import "react-image-lightbox/style.css"
 
 import fanartList from "../contents/fanart-list.json"
 
 const FanartSection: FC = () => {
+  const [open, setOpen] = useState(false)
+  const [selected, setSelected] = useState(0)
+  const length = fanartList.length
   return (
     <div className="-mt-16 pt-16 mb-16">
       <h1
@@ -22,9 +28,36 @@ const FanartSection: FC = () => {
           flex flex-wrap content-start
         "
       >
-        {fanartList.map((fanart) => (
-          <FanartBox key={fanart.image} fanart={fanart} />
+        {fanartList.map((fanart, index) => (
+          <FanartButton
+            key={fanart.image}
+            fanart={fanart}
+            onClick={() => {
+              setSelected(index)
+              setOpen(true)
+            }}
+          />
         ))}
+        {open && (
+          <Lightbox
+            mainSrc={fanartList[selected].image}
+            prevSrc={fanartList[(selected + length - 1) % length].image}
+            nextSrc={fanartList[(selected + 1) % length].image}
+            onCloseRequest={() => setOpen(false)}
+            onMovePrevRequest={() =>
+              setSelected((selected + length - 1) % length)
+            }
+            onMoveNextRequest={() => setSelected((selected + 1) % length)}
+            imageCaption={
+              <span className="font-jp">{fanartList[selected].author}</span>
+            }
+          />
+        )}
+        <style jsx global>{`
+          .ril-caption {
+            justify-content: flex-end;
+          }
+        `}</style>
       </div>
     </div>
   )
@@ -35,17 +68,20 @@ type Fanart = {
   author: string
 }
 
-type FanartBoxProps = {
+type FanartButtonProps = {
   fanart: Fanart
+  onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-const FanartBox: FC<FanartBoxProps> = ({ fanart }) => {
+const FanartButton: FC<FanartButtonProps> = ({ fanart, onClick }) => {
   return (
-    <div
+    <button
       className="
         relative w-full h-96 md:w-1/2
+        block
         font-jp text-base
       "
+      onClick={onClick}
     >
       <div
         className="
@@ -63,7 +99,7 @@ const FanartBox: FC<FanartBoxProps> = ({ fanart }) => {
       >
         <span className="px-2">{fanart.author}</span>
       </div>
-    </div>
+    </button>
   )
 }
 
