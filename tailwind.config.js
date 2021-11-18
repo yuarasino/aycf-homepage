@@ -7,6 +7,9 @@ module.exports = {
       lg: "72rem",
     },
     extend: {
+      height: {
+        "120": "30rem",
+      },
       fontFamily: {
         body: "'Noto Sans JP', sans-serif",
         jp: "'Yusei Magic', sans-serif",

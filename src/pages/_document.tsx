@@ -17,7 +17,13 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Yusei+Magic&display=swap"
           />
         </Head>
-        <body className="min-h-screen font-body text-gray-900">
+        <body
+          className="
+            min-h-screen
+            bg-white text-gray-900
+            font-body text-base
+          "
+        >
           <Main />
           <NextScript />
         </body>
