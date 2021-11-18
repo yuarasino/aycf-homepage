@@ -5,6 +5,7 @@ import Head from "next/head"
 import TopSection from "../components/top-section"
 import NewsSection from "../components/news-section"
 import MemberSection from "../components/member-section"
+import ArchiveSection from "../components/archive-section"
 
 const HomePage: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage: NextPage = () => {
       <TopSection />
       <NewsSection />
       <MemberSection />
+      <ArchiveSection />
     </div>
   )
 }

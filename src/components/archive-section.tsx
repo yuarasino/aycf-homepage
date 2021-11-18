@@ -3,19 +3,19 @@ import type { FC } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import newsList from "../contents/news-list.json"
+import archiveList from "../contents/archive-list.json"
 
-const NewsSection: FC = () => {
+const ArchiveSection: FC = () => {
   return (
-    <section id="news" className="-mt-16 pt-16 mb-16">
+    <section id="archive" className="-mt-16 pt-16 mb-16">
       <h2
         className="
           py-8 md:py-12
           font-jp font-bold text-4xl text-center tracking-widest md:text-6xl
         "
       >
-        <span>NEWS</span>
-        <span className="text-2xl md:text-3xl">/ニュース</span>
+        <span>ARCHIVE</span>
+        <span className="text-2xl md:text-3xl">/アーカイブ</span>
       </h2>
       <div
         className="
@@ -23,29 +23,28 @@ const NewsSection: FC = () => {
           flex flex-wrap content-start
         "
       >
-        {newsList.map((news) => (
-          <NewsLink key={news.title} news={news} />
+        {archiveList.map((archive) => (
+          <ArchiveLink key={archive.title} archive={archive} />
         ))}
       </div>
     </section>
   )
 }
 
-type News = {
+type Archive = {
   title: string
   date: string
   link: string
-  icon: string
+  thumb: string
 }
 
-type NewsLinkProps = {
-  news: News
+type ArchiveLinkProps = {
+  archive: Archive
 }
 
-const NewsLink: FC<NewsLinkProps> = ({ news }) => {
-  const external = /^http/.test(news.link)
+const ArchiveLink: FC<ArchiveLinkProps> = ({ archive }) => {
   return (
-    <Link href={news.link}>
+    <Link href={archive.link}>
       <a
         className="
           w-full h-24 p-2 md:w-1/2 md:p-4
@@ -53,26 +52,24 @@ const NewsLink: FC<NewsLinkProps> = ({ news }) => {
           font-jp text-base
           hover:bg-gray-500 hover:bg-opacity-10
         "
-        target={external ? "_blank" : undefined}
-        rel={external ? "noopener noreferrer" : undefined}
       >
         <div
           className="
-            w-16 h-full
+            w-32 h-full
             flex justify-center items-center
           "
         >
           <div
             className="
-              relative w-16 h-16 rounded-full overflow-hidden
+              relative w-32 h-18
               border border-gray-100
             "
           >
             <Image
-              src={news.icon}
+              src={archive.thumb}
               alt=""
-              width={300}
-              height={300}
+              width={320}
+              height={180}
               layout="responsive"
             />
           </div>
@@ -84,13 +81,13 @@ const NewsLink: FC<NewsLinkProps> = ({ news }) => {
           "
         >
           <div className="font-en text-sm text-red-900">
-            {news.date.replace(/-/g, ".")}
+            {archive.date.replace(/-/g, ".")}
           </div>
-          <div>{news.title}</div>
+          <div>{archive.title}</div>
         </div>
       </a>
     </Link>
   )
 }
 
-export default NewsSection
+export default ArchiveSection

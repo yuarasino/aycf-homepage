@@ -9,7 +9,7 @@ import memberList from "../contents/member-list.json"
 const MemberSection: FC = () => {
   const [selected, setSelected] = useState(0)
   return (
-    <section id="member" className="-mt-16 pt-16">
+    <section id="member" className="-mt-16 pt-16 mb-16">
       <h2
         className="
           py-8 md:py-12
