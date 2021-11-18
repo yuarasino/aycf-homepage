@@ -1,0 +1,74 @@
+[
+  {
+    "name": "世闇イズモ",
+    "class": "VTuber",
+    "description": "えーゆーちごふれ監督？",
+    "twitter": "https://twitter.com/izumo_yoyami",
+    "youtube": "https://www.youtube.com/c/zumochannel",
+    "icon": "/thanks/thanks-icon-1.jpg"
+  },
+  {
+    "name": "ういうい",
+    "class": "VTuber",
+    "description": "飲み友達",
+    "twitter": "https://twitter.com/wiwi_Vtuber",
+    "youtube": "https://www.youtube.com/channel/UCmN2vl1h8DeD05oGG5C3Mww",
+    "icon": "/thanks/thanks-icon-2.jpg"
+  },
+  {
+    "name": "アサダスズメ",
+    "class": "VTuber",
+    "description": "セット仲間",
+    "twitter": "https://twitter.com/asada_suzume",
+    "youtube": "https://www.youtube.com/channel/UCAIcSrqvN-f-36aFIma7xyA",
+    "icon": "/thanks/thanks-icon-3.jpg"
+  },
+  {
+    "name": "ねこ武者",
+    "class": "VTuber",
+    "description": "Fリーグチームメイト",
+    "twitter": "https://twitter.com/nekomusyanyan",
+    "youtube": "https://www.youtube.com/channel/UCxirgMGROtBDKV9luVACXxw",
+    "icon": "/thanks/thanks-icon-9.jpg"
+  },
+  {
+    "name": "堀内正人",
+    "class": "麻雀",
+    "description": "滝行させてごめんなさい",
+    "twitter": "https://twitter.com/horihori0104",
+    "youtube": "https://www.youtube.com/channel/UCU-TOIyElBGT0ma31bC3d4A",
+    "icon": "/thanks/thanks-icon-4.png"
+  },
+  {
+    "name": "綱川隆晃",
+    "class": "麻雀",
+    "description": "麻雀大会解説・FPSコラボでお世話になりました",
+    "twitter": "https://twitter.com/green23468r",
+    "youtube": "https://www.youtube.com/channel/UC7Z9VCPMKqwF6jpWOYFFrng",
+    "icon": "/thanks/thanks-icon-5.jpg"
+  },
+  {
+    "name": "きさらぎゆき",
+    "class": "イラスト",
+    "description": "新篠ゆう・稚児 キャラデザ・Live2Dモデルを担当していただきました",
+    "twitter": "https://twitter.com/flowery_moon",
+    "youtube": "https://www.youtube.com/channel/UCzzT7dIrOMhUrgq_7GW6euw",
+    "icon": "/thanks/thanks-icon-6.jpg"
+  },
+  {
+    "name": "エイジ",
+    "class": "イラスト",
+    "description": "えーゆーちごふれメンバーイラスト・ファンアートを描いてくれました",
+    "twitter": "https://twitter.com/eiji678",
+    "youtube": "",
+    "icon": "/thanks/thanks-icon-7.png"
+  },
+  {
+    "name": "わゆ",
+    "class": "イラスト",
+    "description": "えーゆーちごふれファンアートを描いてくれました",
+    "twitter": "https://twitter.com/wayuyuwa_wayu",
+    "youtube": "",
+    "icon": "/thanks/thanks-icon-8.jpg"
+  }
+]

@@ -138,10 +138,18 @@ const MemberInformation: FC<MemberInformationProps> = ({ member }) => {
       <div className="mt-8 whitespace-pre-wrap">{member.description}</div>
       <div className="mt-8">
         <Link href={member.twitter}>
-          <a className="underline">Twitter</a>
+          <a className="underline" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
         </Link>
         <Link href={member.youtube}>
-          <a className="ml-2 underline">YouTube</a>
+          <a
+            className="ml-2 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+          </a>
         </Link>
       </div>
     </div>

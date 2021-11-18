@@ -2,6 +2,8 @@ import type { NextPage } from "next"
 
 import Head from "next/head"
 
+import ThanksSection from "../components/thanks-section"
+
 const ThanksPage: NextPage = () => {
   return (
     <div id="thanks">
@@ -12,6 +14,7 @@ const ThanksPage: NextPage = () => {
           content="えーゆーちごふれがお世話になってる方々"
         />
       </Head>
+      <ThanksSection />
     </div>
   )
 }
