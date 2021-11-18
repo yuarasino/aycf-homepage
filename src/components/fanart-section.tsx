@@ -1,7 +1,6 @@
 import type { FC, MouseEventHandler } from "react"
 
 import { useState } from "react"
-import Image from "next/image"
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
 
@@ -88,7 +87,7 @@ const FanartButton: FC<FanartButtonProps> = ({ fanart, onClick }) => {
           relative w-full h-full
         "
       >
-        <Image src={fanart.image} alt="" layout="fill" objectFit="cover" />
+        <img className="w-full h-full object-cover" src={fanart.image} alt="" />
       </div>
       <div
         className="

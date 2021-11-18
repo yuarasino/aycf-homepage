@@ -1,7 +1,6 @@
 import type { FC, MouseEventHandler } from "react"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 
 import memberList from "../contents/member-list.json"
@@ -85,13 +84,7 @@ const MemberButton: FC<MemberButtonProps> = ({ member, onClick }) => {
             border border-gray-100
           "
         >
-          <Image
-            src={member.icon}
-            alt=""
-            width={300}
-            height={300}
-            layout="responsive"
-          />
+          <img src={member.icon} alt="" />
         </div>
       </div>
       <div
@@ -119,13 +112,7 @@ const MemberIllust: FC<MemberIllustProps> = ({ member }) => {
       "
     >
       <div className="relative w-full h-auto">
-        <Image
-          src={member.illust}
-          alt={member.name}
-          width={720}
-          height={1440}
-          layout="responsive"
-        />
+        <img src={member.illust} alt={member.name} />
       </div>
     </div>
   )

@@ -1,6 +1,5 @@
 import type { FC } from "react"
 
-import Image from "next/image"
 import Link from "next/link"
 
 import archiveList from "../contents/archive-list.json"
@@ -65,13 +64,7 @@ const ArchiveLink: FC<ArchiveLinkProps> = ({ archive }) => {
               border border-gray-100
             "
           >
-            <Image
-              src={archive.thumb}
-              alt=""
-              width={320}
-              height={180}
-              layout="responsive"
-            />
+            <img src={archive.thumb} alt={archive.title} />
           </div>
         </div>
         <div

@@ -1,6 +1,5 @@
 import type { FC } from "react"
 
-import Image from "next/image"
 import Link from "next/link"
 
 import newsList from "../contents/news-list.json"
@@ -68,13 +67,7 @@ const NewsLink: FC<NewsLinkProps> = ({ news }) => {
               border border-gray-100
             "
           >
-            <Image
-              src={news.icon}
-              alt=""
-              width={300}
-              height={300}
-              layout="responsive"
-            />
+            <img src={news.icon} alt="" />
           </div>
         </div>
         <div
