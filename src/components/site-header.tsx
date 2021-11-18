@@ -84,9 +84,9 @@ const LogoLink: FC = () => {
   return (
     <Link href="/">
       <a className="block">
-        <h1 className="font-jp font-bold text-2xl tracking-widest">
+        <div className="font-jp font-bold text-2xl tracking-widest">
           <span>えーゆーちごふれ！</span>
-        </h1>
+        </div>
       </a>
     </Link>
   )

@@ -19,7 +19,6 @@ class MyDocument extends Document {
         </Head>
         <body
           className="
-            min-h-screen
             bg-white text-gray-900
             font-body text-base
           "
