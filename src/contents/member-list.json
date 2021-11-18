@@ -1,0 +1,46 @@
+[
+  {
+    "name": "えーたろう",
+    "nameEn": "Ataro",
+    "class": "異世界転生系VTuber",
+    "description": "転生したら帝国軍人の女の子でした……\nのんびり気ままにゲーム配信やってます！！",
+    "hashtags": ["絵ーたろう", "業務用絵ーたろう"],
+    "twitter": "https://twitter.com/ataro_channel",
+    "youtube": "https://www.youtube.com/c/Atarochannel",
+    "icon": "/icons/a-eiji-icon.png",
+    "illust": "/illusts/a-eiji-illust.png"
+  },
+  {
+    "name": "新篠ゆう",
+    "nameEn": "Yu Arasino",
+    "class": "バーチャル美少女プログラマー",
+    "description": "バーチャル美少女プログラマー/麻雀VTuberの新篠ゆうです！\n雀魂よく打ってます！",
+    "hashtags": ["あらしのゆう", "あらしのあーと"],
+    "twitter": "https://twitter.com/yuarasino",
+    "youtube": "https://www.youtube.com/c/yuarasino",
+    "icon": "/icons/y-eiji-icon.png",
+    "illust": "/illusts/y-eiji-illust.png"
+  },
+  {
+    "name": "稚児",
+    "nameEn": "Chigo",
+    "class": "バーチャル22歳",
+    "description": "バーチャル22歳Vtuber(2020/6/24~)\n雀魂 71代目魂天/秋刀魚聖3",
+    "hashtags": ["ちごあーと", "ちご検討"],
+    "twitter": "https://twitter.com/chigo0822",
+    "youtube": "https://www.youtube.com/c/chigochannel",
+    "icon": "/icons/c-eiji-icon.png",
+    "illust": "/illusts/c-eiji-illust.png"
+  },
+  {
+    "name": "獅子ヶ谷フレア",
+    "nameEn": "Flare Shishigaya",
+    "class": "ウマ娘Vtuber",
+    "description": "ウマ娘Vの獅子ヶ谷(ししがや)フレアです！\nウマ娘の育成を主に配信していきます！",
+    "hashtags": ["ウマ娘", "Vtuber"],
+    "twitter": "https://twitter.com/FLARE_lupus",
+    "youtube": "https://www.youtube.com/channel/UCS9Obb1VyV-mEmFtlK1RzoA",
+    "icon": "/icons/f-eiji-icon.png",
+    "illust": "/illusts/f-eiji-illust.png"
+  }
+]

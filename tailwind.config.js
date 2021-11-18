@@ -3,11 +3,11 @@ module.exports = {
   darkMode: false,
   theme: {
     screens: {
-      md: "48rem",
-      lg: "72rem",
+      md: "50rem",
+      lg: "75rem",
     },
     extend: {
-      height: {
+      maxHeight: {
         "120": "30rem",
       },
       fontFamily: {

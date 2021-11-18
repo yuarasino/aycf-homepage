@@ -19,7 +19,7 @@ const NewsSection: FC = () => {
       </h2>
       <div
         className="
-          container h-120 overflow-auto mx-auto
+          container max-h-120 overflow-auto mx-auto
           flex flex-wrap content-start
         "
       >
@@ -35,7 +35,7 @@ type News = {
   title: string
   date: string
   link: string
-  thumb: string
+  icon: string
 }
 
 type NewsLinkProps = {
@@ -69,7 +69,7 @@ const NewsLink: FC<NewsLinkProps> = ({ news }) => {
             "
           >
             <Image
-              src={news.thumb}
+              src={news.icon}
               alt=""
               width={300}
               height={300}
